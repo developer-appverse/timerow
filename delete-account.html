@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Delete Account • TimeRow</title>
+  <meta name="description" content="How to delete your TimeRow account and synced data." />
+  <style>
+    :root{
+      --bg0:#070A12; --bg1:#0B1020;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.08);
+      --text:#E9ECF5; --muted:rgba(233,236,245,.72);
+      --line:rgba(255,255,255,.12);
+      --brand:#4F6BFF; --brand2:#00D4FF;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 18px; --radius2: 14px;
+      --max: 980px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:var(--font); color:var(--text); line-height:1.6;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(79,107,255,.35), transparent 60%),
+        radial-gradient(900px 500px at 85% 0%, rgba(0,212,255,.18), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+    }
+    a{color:var(--brand2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);background:rgba(7,10,18,.6);border-bottom:1px solid var(--line)}
+    .topbar-inner{max-width:var(--max);margin:0 auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+    .logo{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:0 10px 25px rgba(79,107,255,.28)}
+    .nav{display:flex;flex-wrap:wrap;gap:10px;font-size:14px;color:var(--muted)}
+    .nav a{padding:8px 10px;border-radius:12px;border:1px solid transparent;color:var(--muted)}
+    .nav a:hover{border-color:var(--line);background:rgba(255,255,255,.04);text-decoration:none;color:var(--text)}
+    header.hero{max-width:var(--max);margin:0 auto;padding:34px 18px 10px}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.04));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .pill{font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted)}
+    h1{margin:10px 0 6px;font-size:34px;line-height:1.15}
+    .sub{margin:0;color:var(--muted)}
+    main{max-width:var(--max);margin:0 auto;padding:16px 18px 50px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 12px 40px rgba(0,0,0,.28);padding:22px}
+    h2{margin:0 0 10px;font-size:20px}
+    p,li{color:var(--muted)}
+    ul{margin:8px 0 8px 18px}
+    .steps{
+      background:var(--card2);
+      border:1px solid var(--line);
+      border-radius: var(--radius2);
+      padding:16px;
+      margin:12px 0;
+    }
+    .footer{max-width:var(--max);margin:0 auto;padding:22px 18px 34px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;border-top:1px solid var(--line)}
+    .footer a{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>TimeRow • Legal</div>
+      </div>
+      <div class="nav">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="delete-account.html">Delete Account</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-card">
+      <span class="pill">Account Deletion</span>
+      <h1>Delete Your TimeRow Account</h1>
+      <p class="sub">How to delete your account and synced data for <strong>TimeRow</strong> (com.nasirakram.timerow)</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Steps to delete your account</h2>
+      <div class="steps">
+        <ul>
+          <li>Open the <strong>TimeRow</strong> app</li>
+          <li>Go to <strong>Settings</strong></li>
+          <li>Select <strong>Delete Account</strong></li>
+          <li>Confirm deletion</li>
+        </ul>
+      </div>
+
+      <h2>What gets deleted</h2>
+      <ul>
+        <li>Your TimeRow account (Firebase Authentication)</li>
+        <li>Your cloud-synced tasks and related records stored in Firebase Firestore</li>
+        <li>Analytics identifiers associated with your account (where applicable)</li>
+      </ul>
+      <p>
+        Tasks stored locally on your device can also be removed by deleting tasks in the app or uninstalling the app.
+      </p>
+
+      <h2>If you can’t access the app</h2>
+      <p>
+        If you are unable to access TimeRow to delete your account (for example, you lost access to your device),
+        contact us and we’ll help:
+      </p>
+      <p><strong>Email:</strong> <a href="mailto:developernasirakram@gmail.com">developernasirakram@gmail.com</a></p>
+
+      <h2>Related documents</h2>
+      <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <div class="footer">
+    <div>© <span id="y"></span> Nasir Akram • TimeRow</div>
+    <div>
+      <a href="privacy-policy.html">Privacy</a> •
+      <a href="terms-of-service.html">Terms</a> •
+      <a href="delete-account.html">Delete Account</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

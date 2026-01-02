@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy • TimeRow</title>
+  <meta name="description" content="Privacy Policy for TimeRow (com.nasirakram.timerow)" />
+  <style>
+    :root{
+      --bg0:#070A12;
+      --bg1:#0B1020;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.08);
+      --text:#E9ECF5;
+      --muted:rgba(233,236,245,.72);
+      --line:rgba(255,255,255,.12);
+      --brand:#4F6BFF;
+      --brand2:#00D4FF;
+      --warn:#FFB020;
+      --ok:#3CE07E;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 18px;
+      --radius2: 14px;
+      --max: 980px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(79,107,255,.35), transparent 60%),
+        radial-gradient(900px 500px at 85% 0%, rgba(0,212,255,.18), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      line-height:1.6;
+    }
+    a{color:var(--brand2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .topbar{
+      position:sticky;top:0;z-index:20;
+      backdrop-filter: blur(10px);
+      background: rgba(7,10,18,.6);
+      border-bottom:1px solid var(--line);
+    }
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:10px;
+      font-weight:700;letter-spacing:.2px;
+    }
+    .logo{
+      width:34px;height:34px;border-radius:12px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: 0 10px 25px rgba(79,107,255,.28);
+    }
+    .nav{
+      display:flex;flex-wrap:wrap;gap:10px;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .nav a{
+      padding:8px 10px;border-radius:12px;
+      border:1px solid transparent;
+      color:var(--muted);
+    }
+    .nav a:hover{
+      border-color:var(--line);
+      background: rgba(255,255,255,.04);
+      text-decoration:none;
+      color:var(--text);
+    }
+
+    header.hero{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:34px 18px 10px;
+    }
+    .hero-card{
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:22px;
+    }
+    .kicker{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:13px;color:var(--muted);
+    }
+    .pill{
+      font-size:12px;
+      padding:4px 10px;border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--muted);
+    }
+    h1{margin:10px 0 6px;font-size:34px;line-height:1.15}
+    .sub{margin:0;color:var(--muted)}
+    .meta{
+      margin-top:14px;
+      display:flex;flex-wrap:wrap;gap:10px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    main{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:16px 18px 50px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:16px;
+    }
+    .card{
+      background: var(--card);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 40px rgba(0,0,0,.28);
+      padding:22px;
+    }
+    .toc{
+      background: var(--card2);
+      border-radius: var(--radius2);
+      border:1px solid var(--line);
+      padding:16px;
+    }
+    .toc h2{margin:0 0 10px;font-size:16px}
+    .toc ul{margin:0;padding-left:18px;color:var(--muted)}
+    .toc li{margin:6px 0}
+    .toc a{color:var(--text)}
+    h2{margin:0 0 10px;font-size:20px}
+    h3{margin:18px 0 8px;font-size:16px}
+    p{margin:8px 0;color:var(--muted)}
+    ul{margin:8px 0 8px 18px;color:var(--muted)}
+    li{margin:6px 0}
+    .note{
+      margin-top:14px;
+      padding:12px 14px;
+      border-radius: var(--radius2);
+      border:1px solid var(--line);
+      background: rgba(79,107,255,.08);
+      color:var(--muted);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:12px;
+      margin-top:10px;
+    }
+    @media (min-width: 900px){
+      main{grid-template-columns: 320px 1fr;align-items:start}
+      .sticky{position:sticky;top:78px}
+    }
+    .table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+      overflow:hidden;
+      border-radius: 14px;
+      border:1px solid var(--line);
+    }
+    .table th,.table td{
+      padding:12px 12px;
+      border-bottom:1px solid var(--line);
+      vertical-align:top;
+      text-align:left;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .table th{color:var(--text);background:rgba(255,255,255,.04)}
+    .footer{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:22px 18px 34px;
+      color:var(--muted);
+      font-size:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:space-between;
+      border-top:1px solid var(--line);
+    }
+    .footer a{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>TimeRow • Legal</div>
+      </div>
+      <div class="nav">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="delete-account.html">Delete Account</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-card">
+      <div class="kicker">
+        <span class="pill">Google Play compliant</span>
+        <span class="pill">Worldwide</span>
+        <span class="pill">No ads</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="sub">for <strong>TimeRow</strong> (com.nasirakram.timerow)</p>
+      <div class="meta">
+        <span>Effective date: <strong>02 January, 2026</strong></span>
+        <span>App version: <strong>1.0.0+1</strong></span>
+        <span>Developer: <strong>Nasir Akram</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <aside class="card sticky">
+      <div class="toc">
+        <h2>Contents</h2>
+        <ul>
+          <li><a href="#intro">1. Introduction</a></li>
+          <li><a href="#collect">2. Information We Collect</a></li>
+          <li><a href="#use">3. How We Use Information</a></li>
+          <li><a href="#share">4. Data Sharing</a></li>
+          <li><a href="#thirdparty">5. Third-Party Services</a></li>
+          <li><a href="#children">6. Children’s Privacy</a></li>
+          <li><a href="#rights">7. Your Rights & Choices</a></li>
+          <li><a href="#retention">8. Data Retention</a></li>
+          <li><a href="#international">9. International Transfers</a></li>
+          <li><a href="#security">10. Security</a></li>
+          <li><a href="#permissions">11. Permissions</a></li>
+          <li><a href="#changes">12. Changes to This Policy</a></li>
+          <li><a href="#contact">13. Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="note">
+        <strong>Summary</strong><br/>
+        TimeRow helps you organize tasks. Tasks can be stored locally on your device, and if you sign in, they can be synced to Firebase Firestore. We use Firebase Analytics to understand app usage and Firebase Crashlytics to fix crashes. We do not use data for advertising, and we do not sell personal data.
+      </div>
+    </aside>
+
+    <section class="card">
+      <h2 id="intro">1. Introduction</h2>
+      <p>
+        TimeRow (“we”, “our”, or “us”) respects your privacy. This Privacy Policy explains what information we collect,
+        how we use it, and the choices you have when using the TimeRow mobile application.
+      </p>
+
+      <h2 id="collect">2. Information We Collect</h2>
+      <p>We collect the minimum information needed to provide core functionality and improve app reliability.</p>
+
+      <table class="table" aria-label="Data types we collect">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Examples</th>
+            <th>Why we collect it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Account information</strong></td>
+            <td>Email address; display name (if provided via sign-in)</td>
+            <td>To create and manage your account and enable cloud sync.</td>
+          </tr>
+          <tr>
+            <td><strong>User content</strong></td>
+            <td>Tasks you create (title, date/time, category, notes, reminder settings)</td>
+            <td>To store and organize your tasks locally, and sync them to the cloud when you sign in.</td>
+          </tr>
+          <tr>
+            <td><strong>App activity (analytics)</strong></td>
+            <td>Screen views and in-app events (e.g., creating/completing tasks, using filters/search)</td>
+            <td>To understand usage and improve features and user experience.</td>
+          </tr>
+          <tr>
+            <td><strong>Diagnostics</strong></td>
+            <td>Crash logs, device/app version, OS version, basic state at crash time</td>
+            <td>To identify crashes and improve stability (Crashlytics).</td>
+          </tr>
+          <tr>
+            <td><strong>Device identifiers</strong></td>
+            <td>Firebase app instance identifiers / crash installation identifiers (resettable)</td>
+            <td>To measure analytics and group crash reports; not used for advertising.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Offline-first storage & optional cloud sync</h3>
+      <p>
+        TimeRow works offline. By default, tasks are stored locally on your device (local database).
+        If you sign in, we may sync tasks to Google Firebase Firestore under your account so they can be restored on other devices.
+      </p>
+
+      <h3>What we do NOT collect</h3>
+      <ul>
+        <li>We do not collect precise location data.</li>
+        <li>We do not access your contacts.</li>
+        <li>We do not request storage permissions for browsing your device files.</li>
+        <li>We do not use your data for advertising or profiling.</li>
+      </ul>
+
+      <h2 id="use">3. How We Use Information</h2>
+      <ul>
+        <li><strong>Provide core features:</strong> task creation, calendar view, focus mode, reminders, and settings.</li>
+        <li><strong>Cloud sync (if you sign in):</strong> to sync and restore your tasks and account data.</li>
+        <li><strong>Improve the app:</strong> analytics helps us understand what features are used and improve performance.</li>
+        <li><strong>Reliability:</strong> Crashlytics helps diagnose crashes and fix bugs.</li>
+      </ul>
+
+      <h2 id="share">4. Data Sharing</h2>
+      <p>
+        We do not sell your personal data. We do not share personal data with third parties for advertising.
+        We only share information with service providers needed to operate the app (see Section 5).
+      </p>
+
+      <h2 id="thirdparty">5. Third-Party Services</h2>
+      <p>
+        TimeRow uses Google Firebase services to provide authentication, cloud sync, analytics, and crash reporting.
+        These services may process data as described in their policies:
+      </p>
+      <ul>
+        <li><strong>Firebase Authentication</strong> (Google LLC) — account sign-in and management.</li>
+        <li><strong>Cloud Firestore</strong> (Google LLC) — optional cloud sync of your tasks when you sign in.</li>
+        <li><strong>Firebase Analytics</strong> (Google LLC) — usage analytics to improve the app.</li>
+        <li><strong>Firebase Crashlytics</strong> (Google LLC) — crash reporting and diagnostics.</li>
+      </ul>
+      <p>
+        Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+      </p>
+
+      <h2 id="children">6. Children’s Privacy</h2>
+      <p>
+        TimeRow is not intended for children under 13. We do not knowingly collect personal information from children.
+        If you believe a child provided personal information, contact us and we will take appropriate action.
+      </p>
+
+      <h2 id="rights">7. Your Rights & Choices</h2>
+      <ul>
+        <li><strong>Access & update:</strong> You can update your data in the app (e.g., edit tasks).</li>
+        <li><strong>Delete tasks:</strong> You can delete tasks inside the app at any time.</li>
+        <li><strong>Delete account:</strong> You can delete your account in the app (Settings → Delete Account). This deletes your account and synced cloud data (see Delete Account page).</li>
+        <li><strong>Notifications:</strong> You can enable/disable reminders in-app and in device settings.</li>
+      </ul>
+      <p>
+        Depending on your location, you may have rights under privacy laws (e.g., GDPR/UK GDPR or CCPA/CPRA). You can contact us to request help with data access or deletion.
+      </p>
+
+      <h2 id="retention">8. Data Retention</h2>
+      <ul>
+        <li><strong>Local tasks:</strong> stored on your device until you delete them or uninstall the app.</li>
+        <li><strong>Cloud-synced tasks:</strong> retained while your account is active; deleted when you delete your account (or as otherwise required for legal obligations).</li>
+        <li><strong>Analytics & crash data:</strong> retained by Firebase for a limited period to provide analytics and stability reporting, according to Google/Firebase retention policies.</li>
+      </ul>
+
+      <h2 id="international">9. International Transfers</h2>
+      <p>
+        If you sign in and use cloud sync, your data may be processed on servers operated by Google/Firebase in regions outside your country. We use these services solely to provide the app features described in this policy.
+      </p>
+
+      <h2 id="security">10. Security</h2>
+      <p>
+        We use reasonable technical measures to protect data, including secure connections (encryption in transit) and trusted cloud infrastructure providers. No method of transmission or storage is 100% secure.
+      </p>
+
+      <h2 id="permissions">11. Permissions</h2>
+      <p>TimeRow may request the following permissions to provide features:</p>
+      <ul>
+        <li><strong>INTERNET</strong> — Firebase services and network operations</li>
+        <li><strong>ACCESS_NETWORK_STATE</strong> — connectivity checks</li>
+        <li><strong>POST_NOTIFICATIONS</strong> — Android 13+ notifications (requested when you enable reminders)</li>
+        <li><strong>RECEIVE_BOOT_COMPLETED</strong> — to reschedule reminders after device reboot</li>
+        <li><strong>USE_FULL_SCREEN_INTENT</strong> / <strong>ACCESS_NOTIFICATION_POLICY</strong> — only if used for advanced notification behavior on your device</li>
+      </ul>
+
+      <h2 id="changes">12. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.
+      </p>
+
+      <h2 id="contact">13. Contact Us</h2>
+      <p><strong>Developer / Company:</strong> Nasir Akram</p>
+      <p><strong>Email:</strong> <a href="mailto:developernasirakram@gmail.com">developernasirakram@gmail.com</a></p>
+      <p><strong>Google Play:</strong> <a href="https://play.google.com/store/apps/details?id=com.nasirakram.timerow" target="_blank" rel="noopener">TimeRow on Google Play</a></p>
+      <p><strong>Terms & Conditions:</strong> <a href="terms-of-service.html">Read our ToS</a></p>
+    </section>
+  </main>
+
+  <div class="footer">
+    <div>© <span id="y"></span> Nasir Akram • TimeRow</div>
+    <div>
+      <a href="privacy-policy.html">Privacy</a> •
+      <a href="terms-of-service.html">Terms</a> •
+      <a href="delete-account.html">Delete Account</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
