@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TimeRow • Legal & Support</title>
+  <meta name="description" content="TimeRow official legal & support hub: Privacy Policy, Terms, Delete Account, and contact details." />
+
+  <!-- App icon (keep ic_launcher.webp in the same folder) -->
+  <link rel="icon" type="image/webp" href="ic_launcher.webp" />
+  <link rel="apple-touch-icon" href="ic_launcher.webp" />
+
+  <style>
+    :root{
+      --bg0:#070A12; --bg1:#0B1020;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.08);
+      --text:#E9ECF5; --muted:rgba(233,236,245,.72);
+      --line:rgba(255,255,255,.12);
+      --brand:#4F6BFF; --brand2:#00D4FF;
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 18px; --radius2: 14px;
+      --max: 980px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:var(--font); color:var(--text); line-height:1.6;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(79,107,255,.35), transparent 60%),
+        radial-gradient(900px 500px at 85% 0%, rgba(0,212,255,.18), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+    }
+    a{color:var(--brand2);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);background:rgba(7,10,18,.6);border-bottom:1px solid var(--line)}
+    .topbar-inner{max-width:var(--max);margin:0 auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+    .logo{width:34px;height:34px;border-radius:12px;display:block;object-fit:cover;box-shadow:0 10px 25px rgba(79,107,255,.20)}
+    .nav{display:flex;flex-wrap:wrap;gap:10px;font-size:14px;color:var(--muted)}
+    .nav a{padding:8px 10px;border-radius:12px;border:1px solid transparent;color:var(--muted)}
+    .nav a:hover{border-color:var(--line);background:rgba(255,255,255,.04);text-decoration:none;color:var(--text)}
+
+    header.hero{max-width:var(--max);margin:0 auto;padding:34px 18px 10px}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.04));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .pill{font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);display:inline-flex;gap:8px;align-items:center}
+    h1{margin:10px 0 6px;font-size:34px;line-height:1.15}
+    .sub{margin:0;color:var(--muted)}
+    .meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;color:var(--muted);font-size:14px}
+
+    main{max-width:var(--max);margin:0 auto;padding:16px 18px 50px}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media (min-width: 900px){ .grid{grid-template-columns: 1fr 1fr} }
+
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 12px 40px rgba(0,0,0,.28);padding:22px}
+    h2{margin:0 0 10px;font-size:20px}
+    p,li{color:var(--muted)}
+    ul{margin:8px 0 0 18px}
+
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 12px;border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--text);
+      text-decoration:none;
+      font-size:14px;
+    }
+    .btn:hover{background:rgba(255,255,255,.07);text-decoration:none}
+    .btn.primary{
+      border-color:transparent;
+      background:linear-gradient(135deg,var(--brand),var(--brand2));
+      color:#071019;
+      font-weight:700;
+    }
+
+    .note{
+      margin-top:12px;
+      padding:12px 14px;
+      border-radius: var(--radius2);
+      border:1px solid var(--line);
+      background: rgba(79,107,255,.08);
+      color:var(--muted);
+    }
+
+    .footer{max-width:var(--max);margin:0 auto;padding:22px 18px 34px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;border-top:1px solid var(--line)}
+    .footer a{color:var(--muted)}
+    code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <img class="logo" src="ic_launcher.webp" alt="TimeRow app icon" />
+        <div>TimeRow • Legal</div>
+      </div>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="delete-account.html">Delete Account</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero-card">
+      <span class="pill">📄 Legal & Support</span>
+      <h1>TimeRow Legal & Support</h1>
+      <p class="sub">Official page for policies, account deletion, and support contact for <strong>TimeRow</strong>.</p>
+      <div class="meta">
+        <span>Package: <strong>com.nasirakram.timerow</strong></span>
+        <span>Developer: <strong>Nasir Akram</strong></span>
+        <span>Last updated: <strong><span id="lastUpdated"></span></strong></span>
+      </div>
+
+      <div class="actions">
+        <!-- Update this link after your Play Store listing is live -->
+        <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.nasirakram.timerow" target="_blank" rel="noopener">
+          Get TimeRow on Google Play
+        </a>
+        <a class="btn" href="mailto:developernasirakram@gmail.com">
+          Contact Support
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card">
+        <h2>Quick links</h2>
+        <p>Use these links for Google Play compliance and user support.</p>
+        <div class="actions">
+          <a class="btn" href="privacy-policy.html">Privacy Policy</a>
+          <a class="btn" href="terms-of-service.html">Terms of Service</a>
+          <a class="btn" href="delete-account.html">Delete Account</a>
+        </div>
+
+        <div class="note">
+          <strong>Account deletion:</strong> If you sign in, you can delete your account in the app via
+          <strong>Settings → Delete Account</strong>. For help, email support.
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>About TimeRow</h2>
+        <p>
+          TimeRow is a productivity app to manage tasks and schedules. It works offline by default.
+          Sign-in is optional — if you sign in, your tasks can be synced to the cloud for backup and multi-device access.
+        </p>
+        <ul>
+          <li>Offline-first tasks</li>
+          <li>Optional sign-in + cloud sync</li>
+          <li>Reminders & scheduling</li>
+          <li>Multi-language support</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Data & privacy summary</h2>
+        <p>
+          We do not sell personal data and we do not use data for advertising. We use Google Firebase services to provide
+          authentication (optional), cloud sync (optional), analytics, and crash reporting.
+        </p>
+        <ul>
+          <li><strong>Cloud sync:</strong> only when you sign in</li>
+          <li><strong>Analytics:</strong> helps us understand usage and improve features</li>
+          <li><strong>Crash reports:</strong> helps us fix stability issues</li>
+        </ul>
+        <p style="margin-top:10px">
+          Read the full details in the <a href="privacy-policy.html">Privacy Policy</a>.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Support</h2>
+        <p>
+          If you need help with account deletion, cloud sync, or app issues, contact us:
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:developernasirakram@gmail.com">developernasirakram@gmail.com</a>
+        </p>
+
+        <div class="note">
+          When emailing, include your device model and app version to help us diagnose issues faster.
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="footer">
+    <div>© <span id="y"></span> Nasir Akram • TimeRow</div>
+    <div>
+      <a href="privacy-policy.html">Privacy</a> •
+      <a href="terms-of-service.html">Terms</a> •
+      <a href="delete-account.html">Delete Account</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Show a human-friendly "Last updated" date (today by default).
+    const d = new Date();
+    const opts = { year: 'numeric', month: 'long', day: '2-digit' };
+    document.getElementById('lastUpdated').textContent = d.toLocaleDateString(undefined, opts);
+  </script>
+</body>
+</html>
