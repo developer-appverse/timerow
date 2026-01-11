@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Delete Account • TimeRow</title>
   <meta name="description" content="How to delete your TimeRow account and synced data." />
+
+  <!-- App icon (put ic_launcher.webp in the same folder as this HTML file) -->
+  <link rel="icon" type="image/webp" href="ic_launcher.webp" />
+  <link rel="apple-touch-icon" href="ic_launcher.webp" />
+
   <style>
     :root{
       --bg0:#070A12; --bg1:#0B1020;
@@ -28,23 +33,68 @@
     }
     a{color:var(--brand2);text-decoration:none}
     a:hover{text-decoration:underline}
-    .topbar{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);background:rgba(7,10,18,.6);border-bottom:1px solid var(--line)}
-    .topbar-inner{max-width:var(--max);margin:0 auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
-    .logo{width:34px;height:34px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:0 10px 25px rgba(79,107,255,.28)}
+
+    .topbar{
+      position:sticky;top:0;z-index:20;
+      backdrop-filter:blur(10px);
+      background:rgba(7,10,18,.6);
+      border-bottom:1px solid var(--line)
+    }
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+      letter-spacing:.2px
+    }
+
+    /* App icon in the topbar */
+    .logo{
+      width:34px;
+      height:34px;
+      border-radius:12px;     /* rounded corners like your app icon */
+      display:block;
+      object-fit:cover;       /* fill nicely */
+      box-shadow:0 10px 25px rgba(79,107,255,.20);
+    }
+
     .nav{display:flex;flex-wrap:wrap;gap:10px;font-size:14px;color:var(--muted)}
     .nav a{padding:8px 10px;border-radius:12px;border:1px solid transparent;color:var(--muted)}
     .nav a:hover{border-color:var(--line);background:rgba(255,255,255,.04);text-decoration:none;color:var(--text)}
+
     header.hero{max-width:var(--max);margin:0 auto;padding:34px 18px 10px}
-    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.04));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .hero-card{
+      background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.04));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px
+    }
     .pill{font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted)}
     h1{margin:10px 0 6px;font-size:34px;line-height:1.15}
     .sub{margin:0;color:var(--muted)}
+
     main{max-width:var(--max);margin:0 auto;padding:16px 18px 50px}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 12px 40px rgba(0,0,0,.28);padding:22px}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:0 12px 40px rgba(0,0,0,.28);
+      padding:22px
+    }
     h2{margin:0 0 10px;font-size:20px}
     p,li{color:var(--muted)}
     ul{margin:8px 0 8px 18px}
+
     .steps{
       background:var(--card2);
       border:1px solid var(--line);
@@ -52,17 +102,32 @@
       padding:16px;
       margin:12px 0;
     }
-    .footer{max-width:var(--max);margin:0 auto;padding:22px 18px 34px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;border-top:1px solid var(--line)}
+
+    .footer{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:22px 18px 34px;
+      color:var(--muted);
+      font-size:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:space-between;
+      border-top:1px solid var(--line)
+    }
     .footer a{color:var(--muted)}
   </style>
 </head>
+
 <body>
   <div class="topbar">
     <div class="topbar-inner">
       <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+        <!-- Uses your actual app icon -->
+        <img class="logo" src="ic_launcher.webp" alt="TimeRow app icon" />
         <div>TimeRow • Legal</div>
       </div>
+
       <div class="nav">
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-of-service.html">Terms of Service</a>
@@ -99,6 +164,18 @@
       </ul>
       <p>
         Tasks stored locally on your device can also be removed by deleting tasks in the app or uninstalling the app.
+      </p>
+
+      <h2>Data retention and deletion timeframe</h2>
+      <p>
+        Once you request account deletion, your <strong>TimeRow</strong> account and all associated
+        user data will be <strong>permanently deleted</strong> from our systems within
+        <strong>7 days</strong>.
+      </p>
+      <p>
+        After the deletion process is completed, the data cannot be recovered.
+        We do not retain any personal user data beyond this period, except where
+        retention is required by law.
       </p>
 
       <h2>If you can’t access the app</h2>
